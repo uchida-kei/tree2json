@@ -1,7 +1,7 @@
 {
-  "name": "test-ts",
+  "name": "tree2json",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "tree2json.js",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^12.7.8",
@@ -12,11 +12,11 @@
     "typescript": "^3.6.3"
   },
   "scripts": {
-	"dev": "ts-node src/index.ts",
-	"whach": "ts-node-dev --respawn src/index.ts",
+	"dev": "ts-node src/tree2json.ts",
+	"whach": "ts-node-dev --respawn src/tree2json.ts",
 	"clean": "rimraf dist/*",
 	"tsc": "tsc",
-	"start": "node dist",
+	"start": "node dist/tree2json.js",
 	"build": "npm-run-all clean tsc start"
   }
 }
